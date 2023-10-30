@@ -1,6 +1,6 @@
 <p align="center">
-    <p align="center">
-        <img width="150" height="150" src="../images/logo.png" alt="Logo" />
+    <p align="center" style="background-color: #fff;">
+        <img width="350" height="350" src="../images/logo.png" alt="Logo" />
     </p>
     <h1 align="center"><b>FTOS SDK Code Snippets</b></h1>
 </p>
