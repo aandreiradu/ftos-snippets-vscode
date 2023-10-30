@@ -46,7 +46,9 @@
   "scripts": {
     "format": "prettier . --check --cache --cache-location='node_modules/.cache/prettiercache'",
     "generate:readme": "tsx scripts/generate-readme.ts",
-    "ci:version": "pnpm generate:readme && pnpm changeset version && pnpm i --lockfile-only"
+    "ci:version": "pnpm generate:readme && pnpm changeset version && pnpm i --lockfile-only",
+    "package": "pnpm vsce package --no-dependencies",
+    "publish": "pnpm vsce publish --no-dependencies"
   },
   "prettier": {
     "bracketSameLine": false,
