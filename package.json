@@ -1,0 +1,67 @@
+{
+  "name": "ftos",
+  "displayName": "FTOS Snippets",
+  "description": "FintechOS Code Snippets",
+  "publisher": "andreiradu",
+  "license": "MIT",
+  "icon": "images/logo.png",
+  "keywords": [
+    "snippets",
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact",
+    "ftos",
+    "fintechos",
+    "FintechOS"
+  ],
+  "homepage": "https://www.fintechos.com",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.83.0"
+  },
+  "categories": [
+    "Snippets"
+  ],
+  "contributes": {
+    "snippets": [
+      {
+        "language": "javascript",
+        "path": "./snippets/ftos-snippets.json"
+      },
+      {
+        "language": "javascriptreact",
+        "path": "./snippets/ftos-snippets.json"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/ftos-snippets.json"
+      },
+      {
+        "language": "typescriptreact",
+        "path": "./snippets/ftos-snippets.json"
+      }
+    ]
+  },
+  "scripts": {
+    "format": "prettier . --check --cache --cache-location='node_modules/.cache/prettiercache'",
+    "generate:readme": "tsx scripts/generate-readme.ts",
+    "ci:version": "pnpm generate:readme && pnpm changeset version && pnpm i --lockfile-only"
+  },
+  "prettier": {
+    "bracketSameLine": false,
+    "bracketSpacing": true,
+    "printWidth": 80,
+    "semi": true,
+    "tabWidth": 2,
+    "trailingComma": "all",
+    "useTabs": false
+  },
+  "dependencies": {
+    "@changesets/cli": "^2.26.2",
+    "@types/node": "^20.8.9",
+    "prettier": "^3.0.3",
+    "tsx": "^3.14.0",
+    "typescript": "^5.2.2"
+  }
+}
