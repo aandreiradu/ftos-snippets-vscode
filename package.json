@@ -1,5 +1,6 @@
 {
-  "name": "ftos",
+  "name": "ftos-snippets-vscode",
+  "version": "0.0.1",
   "displayName": "FTOS Snippets",
   "description": "FintechOS Code Snippets",
   "publisher": "andreiradu",
@@ -23,7 +24,6 @@
   "bugs": {
     "url": "https://github.com/aandreiradu/ftos-snippets-vscode/issues"
   },
-  "version": "0.0.1",
   "engines": {
     "vscode": "^1.83.0"
   },
