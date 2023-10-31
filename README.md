@@ -14,9 +14,10 @@
 
 ## Snippets
 
-| Keyword                   | Description                                |
-| ------------------------- | ------------------------------------------ |
-| ftos:server:library       | import and cache a server library          |
-| ftos:server:query         | import and cache a server library          |
-| ftos:monitoring:deadlocks | Returns the deadlocks identifier procedure |
-| ftos:monitoring:lockchain | Returns the lockchain identifier procedure |
+| Keyword                      | Description                                |
+| ---------------------------- | ------------------------------------------ |
+| ftos:server:library          | import and cache a server library          |
+| ftos:server:fluentquery      | import and cache a server library          |
+| ftos:server:fluentqueryAdmin | import and cache a server library          |
+| ftos:monitoring:deadlocks    | Returns the deadlocks identifier procedure |
+| ftos:monitoring:lockchain    | Returns the lockchain identifier procedure |
