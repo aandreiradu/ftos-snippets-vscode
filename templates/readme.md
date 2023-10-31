@@ -3,6 +3,11 @@
         <img width="350" height="350" src="./images/logo_whitebg.jpg" alt="Logo" />
     </p>
     <h1 align="center"><b>FTOS SDK Code Snippets</b></h1>
+    <br />
+    <br />
+    <p align="center">
+        <img align="center" src="images/usage.gif" alt="Usage" />
+    </p>
 </p>
 
 ## Installation
