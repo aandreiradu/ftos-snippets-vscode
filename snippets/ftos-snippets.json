@@ -7,11 +7,14 @@
         ],
         "description": "import and cache a server library"
     },
-    "serverQuery": {
-        "prefix": "ftos:server:query",
+    "serverFluentQuery": {
+        "prefix": "ftos:server:fluentquery",
         "body": [
             "const alias = server.query.getAlias('<TABLE_NAME>')",
-            "const query = server.query.from('<TABLE_NAME>')"
+            "const query = server.query.from(alias)",
+            "  .selectColumns('<REQUEST ONLY NECESSARY DATA>')",
+            "  .where('<INSERT CONDITION>')",
+            "  .execute()"
         ],
         "description": "import and cache a server library"
     },
