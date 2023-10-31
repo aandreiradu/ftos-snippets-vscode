@@ -1,31 +1,43 @@
 {
-    "importServerLibrary": {
-        "prefix": "ftos:server:library",
-        "body": [
-            "if(typeof ftosLib === 'undefined' || ftosLib === null)",
-            "var ftosLib = importLibrary('<yourLibrary>')"
-        ],
-        "description": "import and cache a server library"
-    },
-    "serverFluentQuery": {
-        "prefix": "ftos:server:fluentquery",
-        "body": [
-            "const alias = server.query.getAlias('<TABLE_NAME>')",
-            "const query = server.query.from(alias)",
-            "  .selectColumns('<REQUEST ONLY NECESSARY DATA>')",
-            "  .where('<INSERT CONDITION>')",
-            "  .execute()"
-        ],
-        "description": "import and cache a server library"
-    },
-    "deadlocksIdentifier": {
-        "prefix": "ftos:monitoring:deadlocks",
-        "body": [],
-        "description": "Returns the deadlocks identifier procedure"
-    },
-    "lockChain": {
-        "prefix": "ftos:monitoring:lockchain",
-        "body": [],
-        "description": "Returns the lockchain identifier procedure"
-    }
+  "importServerLibrary": {
+    "prefix": "ftos:server:library",
+    "body": [
+      "if(typeof ftosLib === 'undefined' || ftosLib === null)",
+      "var ftosLib = importLibrary('<yourLibrary>')"
+    ],
+    "description": "import and cache a server library"
+  },
+  "serverFluentQuery": {
+    "prefix": "ftos:server:fluentquery",
+    "body": [
+      "const alias = server.query.getAlias('<TABLE_NAME>')",
+      "const query = server.query.from(alias)",
+      "  .selectColumns('<REQUEST ONLY NECESSARY DATA>')",
+      "  .where('<INSERT CONDITION>')",
+      "  .execute()"
+    ],
+    "description": "import and cache a server library"
+  },
+  "serverFluentQueryAdmin": {
+    "prefix": "ftos:server:fluentqueryAdmin",
+    "body": [
+      "setAdminMode(true)",
+      "const alias = server.query.getAlias('<TABLE_NAME>')",
+      "const query = server.query.from(alias)",
+      "  .selectColumns('<REQUEST ONLY NECESSARY DATA>')",
+      "  .where('<INSERT CONDITION>')",
+      "  .execute()"
+    ],
+    "description": "import and cache a server library"
+  },
+  "deadlocksIdentifier": {
+    "prefix": "ftos:monitoring:deadlocks",
+    "body": [],
+    "description": "Returns the deadlocks identifier procedure"
+  },
+  "lockChain": {
+    "prefix": "ftos:monitoring:lockchain",
+    "body": [],
+    "description": "Returns the lockchain identifier procedure"
+  }
 }
