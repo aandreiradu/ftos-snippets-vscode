@@ -18,6 +18,18 @@
         ],
         "description": "import and cache a server library"
     },
+    "serverFluentQueryAdmin": {
+        "prefix": "ftos:server:fluentqueryAdmin",
+        "body": [
+            "setAdminMode(true)",
+            "const alias = server.query.getAlias('<TABLE_NAME>')",
+            "const query = server.query.from(alias)",
+            "  .selectColumns('<REQUEST ONLY NECESSARY DATA>')",
+            "  .where('<INSERT CONDITION>')",
+            "  .execute()"
+        ],
+        "description": "import and cache a server library"
+    },
     "deadlocksIdentifier": {
         "prefix": "ftos:monitoring:deadlocks",
         "body": [],
